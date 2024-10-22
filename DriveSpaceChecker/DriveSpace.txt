@@ -1,0 +1,90 @@
+The following hostnames should be included in this report, if they are not then port 135 is being blocked to XYZ client from auw2toolsn001p.
+
+WEX OnPrem =         aue1cvault000p, pwm-wex-5035, pwm-wex-5036, pwm-wex-5206 and pwm-wex-5222
+WEX CoreServices =   auw2cvaultx000p, auw2cvaultx001p, aws-wex-5269 and aws-wex-5270
+WEX SecureCoreProd = AUW2CVAULTU000P, AUW2CVAULTU001P, aws-wex-5281 and aws-wex-5282
+EFS PROD =            aue1cvault001p, aue1cvault002p, auw2cvault000p and auw2cvault001p
+
+IFCS CoreServicesProd = aec1cmvs000p and aec1cmvs003p
+IFCS IFCSProd =        aec1cmvs001p, aec1cmvs006p and asg1cmvs004p
+
+WEX Infrastructure = auw2toolsn001p
+
+
+HostName					Drive	TotalCap	FreeCap		UsedCap
+aue1cvault000p.wexprodr.wexglobal.com		C:	75		36		39
+aue1cvault000p.wexprodr.wexglobal.com		D:	250		179		71
+
+
+
+
+
+
+
+
+
+
+auw2cvaultx000p.wexprodr.wexglobal.com		C:	149		97		52
+auw2cvaultx000p.wexprodr.wexglobal.com		D:	6		1		5
+auw2cvaultx000p.wexprodr.wexglobal.com		F:	60		33		27
+auw2cvaultx000p.wexprodr.wexglobal.com		H:	65		49		16
+
+
+auw2cvaultx001p.wexprodr.wexglobal.com		C:	60		19		40
+auw2cvaultx001p.wexprodr.wexglobal.com		D:	6		1		5
+auw2cvaultx001p.wexprodr.wexglobal.com		F:	60		34		26
+auw2cvaultx001p.wexprodr.wexglobal.com		H:	65		54		11
+
+
+
+
+
+
+AUW2CVAULTU000P.WEXPRODR.WEXGLOBAL.COM		C:	48		18		30
+AUW2CVAULTU000P.WEXPRODR.WEXGLOBAL.COM		D:	89		21		67
+AUW2CVAULTU000P.WEXPRODR.WEXGLOBAL.COM		I:	200		109		91
+
+
+AUW2CVAULTU001P.WEXPRODR.WEXGLOBAL.COM		C:	48		18		30
+AUW2CVAULTU001P.WEXPRODR.WEXGLOBAL.COM		D:	89		22		67
+AUW2CVAULTU001P.WEXPRODR.WEXGLOBAL.COM		I:	150		67		83
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aec1cmvs000p.wexprodr.wexglobal.com		C:	80		39		41
+aec1cmvs000p.wexprodr.wexglobal.com		D:	160		63		97
+
+
+
+
+aec1cmvs001p.wexprodr.wexglobal.com		C:	125		95		29
+aec1cmvs001p.wexprodr.wexglobal.com		D:	125		98		26
+aec1cmvs001p.wexprodr.wexglobal.com		E:	6		1		5
+
+
+aec1cmvs006p.wexprodr.wexglobal.com		C:	50		13		37
+aec1cmvs006p.wexprodr.wexglobal.com		D:	100		80		20
+aec1cmvs006p.wexprodr.wexglobal.com		E:	6		1		5
+
+
+asg1cmvs004p.wexprodr.wexglobal.com		C:	79		47		31
+asg1cmvs004p.wexprodr.wexglobal.com		D:	100		63		37
+asg1cmvs004p.wexprodr.wexglobal.com		E:	140		139		1
+asg1cmvs004p.wexprodr.wexglobal.com		F:	6		1		5
+
+
+auw2toolsn001p.wexprodr.wexglobal.com		C:	50		15		35
+auw2toolsn001p.wexprodr.wexglobal.com		D:	20		19		1
+
+
