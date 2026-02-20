@@ -272,6 +272,21 @@ Function Send_NotificationEmail {
 
     "[$($env:COMPUTERNAME)] Total space reclaimed: $totalFreedMB MB" | Out-File -FilePath $outputPath -Encoding UTF8 -Append
 
+    $diskInfo = Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3" |
+    Select-Object `
+        DeviceID,
+        @{Name="Total Size (GB)"; Expression={[math]::Round($_.Size / 1GB, 2)}},
+        @{Name="Used Space (GB)"; Expression={[math]::Round(($_.Size - $_.FreeSpace) / 1GB, 2)}},
+        @{Name="Free Space (GB)"; Expression={[math]::Round($_.FreeSpace / 1GB, 2)}},
+        @{Name="% Free"; Expression={[math]::Round(($_.FreeSpace / $_.Size) * 100, 2)}}
+
+    Add-Content -Path $outputPath -Value "`n----- Disk Usage Summary -----"
+    $diskInfo | Format-Table -AutoSize | Out-String | Add-Content -Path $outputPath
+    Add-Content -Path $outputPath -Value "`n--------------------------------`n"
+    
+    # Optional: Add blank line separator
+    Add-Content -Path $outputPath -Value ""
+
     $cleanupOutput = Get-Content -Path $outputPath -Raw
 
     $EmailBody = @"
